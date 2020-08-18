@@ -1,1 +1,1 @@
-![FLutter App](/images/Player_1.png)
+![FLutter App](Player_1.png)
