@@ -24,8 +24,6 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
     Explore(),
@@ -49,19 +47,19 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            title: Text('Home', textScaleFactor: .8),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.explore),
-            title: Text('Explore'),
+            title: Text('Explore', textScaleFactor: .8),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.message),
-            title: Text('Chat'),
+            title: Text('Chat', textScaleFactor: .8),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.supervised_user_circle),
-            title: Text('Profile'),
+            title: Text('Profile', textScaleFactor: .8),
           ),
         ],
         currentIndex: _selectedIndex,
