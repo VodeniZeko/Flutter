@@ -66,7 +66,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ],
         currentIndex: _selectedIndex,
         unselectedItemColor: Colors.grey[850],
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Color.fromRGBO(10, 186, 201, 100),
         onTap: _onItemTapped,
       ),
     );
